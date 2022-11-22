@@ -1,0 +1,3 @@
+import sklearn.metrics as metrics
+print(metrics.accuracy_score(y_Train,p1))
+print(metrics.accuracy_score(y_test,p2)
