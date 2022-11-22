@@ -1,0 +1,27 @@
+1.Feature Scaling
+import pandas as pd
+import numby as np
+import seaborn as ans
+import matplotlip.pyplot as plt
+from sklearn import preprocessing
+from sklearn import model_selection
+from sklearn import metrics
+from sklearn import linear_model
+from sklearn import ensemble
+from sklearn import tree
+import Xgboost
+from sklearn.preprocessig import standardscaler
+data = pd.read_csv("E:\IBM_project\weatherAUS.csv")
+#splitting x and y values
+y=data['RainTomorrow']
+x=data.drop('RainTomorrow',axis=1)
+names=x.columns #Loading the names of the of the x_features
+names
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+ in 
+----> 1 names
+
+NameError: name 'names' is not defined
+sc =standardscaler()#initializing the standarscaler
+x=pd.DataFrame(x,columns=names)#scaled data turs ito array format,converting them into dataframe
